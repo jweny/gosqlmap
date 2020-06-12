@@ -13,4 +13,4 @@
 
 截图：
 
-![image-20200612110801081](C:\Go\sqlmap\picture\image-20200612110801081.png)
+![image-20200612110801081](https://github.com/bad-lucifer/gosqlmap/blob/master/picture/image-20200612110801081.png)
