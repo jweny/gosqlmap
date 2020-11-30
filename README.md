@@ -12,5 +12,6 @@
 ### 持续更新...
 
 截图：
-
 ![image-20200612110801081](https://github.com/bad-lucifer/gosqlmap/blob/master/picture/image-20200612110801081.png)
+
+### 本项目由于计划原因，明年一月将继续完成。
