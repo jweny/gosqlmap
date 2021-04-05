@@ -1,4 +1,4 @@
-## 基于golang 编写 sqlmap
+## golang 实现 sqlmap
 
 ### 目前已实现：
 
