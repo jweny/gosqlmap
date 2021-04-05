@@ -9,9 +9,7 @@
 4. 基于报错的启发式检测
 5. DBMS识别
 
-### 持续更新...
-
 截图：
 ![image-20200612110801081](https://github.com/bad-lucifer/gosqlmap/blob/master/picture/image-20200612110801081.png)
 
-### 本项目由于计划原因，明年一月将继续完成。
+### 本项目由于工作计划原因，更新中断，21年将继续完成。
